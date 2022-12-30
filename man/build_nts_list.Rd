@@ -4,10 +4,15 @@
 \alias{build_nts_list}
 \title{Build the National Travel Survey data set from a list}
 \usage{
-build_nts_list(nts_dir, nts_extract = "Default")
+build_nts_list(nts_dir, nts_extract = "Default", nts_names = nts_names)
 }
 \arguments{
-\item{nts_extract}{}
+\item{nts_dir}{Directory to folder where NTS .tab data files are stored}
+
+\item{nts_extract}{Default is a basic extract of NTS. Use a custom named list, e.g. basic_extract}
+}
+\value{
+A tibble of NTS tables joined together
 }
 \description{
 Build the National Travel Survey data set from a list
